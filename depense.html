@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depense</title>
+    <link rel="stylesheet" href="depense.css">
+    <script src="depense.js"></script>
+</head>
+<body>
+    <main id="first-page">
+        <h1>Trace Des Depenses</h1>
+        <form id="form1" autocomplete="off">
+            <input autofocus id="montant" type="text" placeholder="Montant du jour" >
+            <input id="valider" type="submit" value="Valider">
+        </form>
+        <p>Montant Du Jour : <span id="nombre"></span> $</p>
+        <h3>Il vous reste : <span id="reste"></span> $ a depenser</h3>
+        <div>
+            <a id="ndepense" href="">Nouvelle depense</a>
+            <a href="" id="liste">Liste de depense</a>
+        </div>
+    </main>
+   
+    
+   <main id="deuxieme-page">
+       <a href="" id="annuler">Annuler et retourner au menu</a>
+       <h1>Nouvelle Depense</h1>
+        <form id="form2" autocomplete="off">
+            <input autofocus id="nom" type="text" placeholder="Nom de la depense" required>
+            <input type="text" placeholder="cout" id="cout" required>
+            <input id="ajouter" type="submit" value="Ajouter">
+        </form>
+   </main>
+
+   <main id="troisieme-page">
+    <h1>Listes des depenses</h1>
+    <table>
+        <tr>
+            <th>Nom de la depense</th>
+            <th>cout</th>
+        </tr>
+       
+    </table>
+    <a href="" id="retour">Retour au menu </a>
+   </main>
+
+    
+</body>
+</html>
